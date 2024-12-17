@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Informatica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Benvenuto al Quiz di Informatica</h1>
+            <p>Metti alla prova le tue conoscenze! Rispondi alle domande e scopri il tuo punteggio.</p>
+        </header>
+
+        <form action="answer.html" method="GET" class="quiz-form">
+            <div class="question">
+                <label for="q1">Qual è il linguaggio di programmazione più usato?</label>
+                <div>
+                    <input type="radio" name="q1" value="Python" id="q1-py" required>
+                    <label for="q1-py">Python</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="JavaScript" id="q1-js">
+                    <label for="q1-js">JavaScript</label>
+                </div>
+                <div>
+                    <input type="radio" name="q1" value="Java" id="q1-java">
+                    <label for="q1-java">Java</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="q2">Cos'è un browser web?</label>
+                <div>
+                    <input type="radio" name="q2" value="Un software per navigare su Internet" id="q2-browser" required>
+                    <label for="q2-browser">Un software per navigare su Internet</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="Un sistema operativo" id="q2-os">
+                    <label for="q2-os">Un sistema operativo</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="q3">Cos'è un algoritmo?</label>
+                <div>
+                    <input type="radio" name="q3" value="Una sequenza di istruzioni per risolvere un problema" id="q3-algorithm" required>
+                    <label for="q3-algorithm">Una sequenza di istruzioni per risolvere un problema</label>
+                </div>
+                    <div>
+                    <input type="radio" name="q3" value="Un linguaggio di programmazione" id="q3-lang">
+                    <label for="q3-lang">Un linguaggio di programmazione</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="q1-open">Che cos'è l'intelligenza artificiale?</label>
+                <textarea name="q1-open" id="q1-open" rows="4" required></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q2-open">Qual è la differenza tra RAM e ROM?</label>
+                <textarea name="q2-open" id="q2-open" rows="4" required></textarea>
+            </div>
+
+            <div class="question">
+                <label for="q3-open">Cosa intendi per 'Cloud Computing'?</label>
+                <textarea name="q3-open" id="q3-open" rows="4" required></textarea>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" class="btn">Invia Risposte</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
